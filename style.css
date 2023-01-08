@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    background: url(img/fon.jpg) no-repeat center / cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: none;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+}
+
+.title {
+    font-size: 100px;
+    animation: title-run 1.5s ease infinite alternate;
+}
+
+@keyframes title-run {
+    0% {
+        transform: none;
+        color: red;
+    }
+
+    25% {
+        transform: none;
+        color: white;
+    }
+
+    50% {
+        transform: none;
+        color: green;
+    }
+
+    75% {
+        transform: none;
+        color: red;
+    }
+
+    100% {
+        transform: none;
+        color: white;
+    }
+}
+
+
+.compliment {
+    width: 50%;
+    height: 40%;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+    display: none;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.compliment__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.compliment__title {
+    margin-top: 0px;
+}
+
+.compliment__title-name {
+    font-style: italic;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    font-weight: 400;
+}
+
+.form__row {
+    margin-bottom: 20px;
+}
